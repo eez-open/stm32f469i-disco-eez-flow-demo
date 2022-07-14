@@ -175,7 +175,7 @@ void lowPriorityThreadOneIter() {
 #if defined(EEZ_PLATFORM_STM32)
     static uint32_t g_lastTickCountMsTempRead;
 
-    if (g_lastTickCountMsTempRead - g_lastTickCountMs > 3000) {
+    if (g_lastTickCountMs - g_lastTickCountMsTempRead > 1000) {
         g_lastTickCountMsTempRead = g_lastTickCountMs;
 
         __HAL_ADC_ENABLE(&hadc1);
