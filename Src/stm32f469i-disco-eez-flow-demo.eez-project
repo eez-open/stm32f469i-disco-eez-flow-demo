@@ -351,7 +351,7 @@
           "customOutputs": [],
           "data": "\"Hello, world!\"",
           "style": {
-            "inheritFrom": "default_24"
+            "inheritFrom": "default_XL"
           },
           "timeline": []
         },
@@ -2630,7 +2630,7 @@
           "customOutputs": [],
           "data": "keypad_text",
           "style": {
-            "inheritFrom": "default_38"
+            "inheritFrom": "default_XXL"
           },
           "timeline": [],
           "displayOption": 0
@@ -4791,13 +4791,13 @@
           "max": "59",
           "text": "String.padStart(min, 2, \"0\")",
           "selectedValueStyle": {
-            "inheritFrom": "default_38",
+            "inheritFrom": "default_XXL",
             "borderSize": "2",
             "borderRadius": "4",
             "borderColor": "#c0c0c0"
           },
           "unselectedValueStyle": {
-            "inheritFrom": "default_24",
+            "inheritFrom": "default_XL",
             "color": "#808080"
           }
         },
@@ -4834,13 +4834,13 @@
           "max": "59",
           "text": "String.padStart(sec, 2, \"0\")",
           "selectedValueStyle": {
-            "inheritFrom": "default_38",
+            "inheritFrom": "default_XXL",
             "borderSize": "2",
             "borderRadius": "4",
             "borderColor": "#c0c0c0"
           },
           "unselectedValueStyle": {
-            "inheritFrom": "default_24",
+            "inheritFrom": "default_XL",
             "color": "#808080"
           }
         },
@@ -5561,11 +5561,11 @@
   "styles": [
     {
       "name": "quote",
-      "inheritFrom": "default_17"
+      "inheritFrom": "default_L"
     },
     {
       "name": "tab",
-      "inheritFrom": "default_17"
+      "inheritFrom": "default"
     },
     {
       "name": "block",
@@ -5573,19 +5573,19 @@
       "backgroundColor": "#c8c8c8"
     },
     {
-      "name": "default_17",
+      "name": "default_L",
       "description": "",
       "inheritFrom": "default",
       "font": "text_L"
     },
     {
-      "name": "default_24",
+      "name": "default_XL",
       "description": "",
       "inheritFrom": "default",
       "font": "text_XL"
     },
     {
-      "name": "default_38",
+      "name": "default_XXL",
       "description": "",
       "inheritFrom": "default",
       "font": "text_XXL"
@@ -5831,14 +5831,14 @@
     },
     {
       "name": "roller_widget_selected_value",
-      "inheritFrom": "default_38",
+      "inheritFrom": "default_XXL",
       "borderSize": "2",
       "borderRadius": "4",
       "borderColor": "#c0c0c0"
     },
     {
       "name": "roller_widget_unselected_value",
-      "inheritFrom": "default_24",
+      "inheritFrom": "default_XL",
       "color": "#808080"
     }
   ],

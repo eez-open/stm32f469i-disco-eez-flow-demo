@@ -123,7 +123,7 @@ enum StylesEnum {
     STYLE_ID_INLINE15 = 16,
     STYLE_ID_INLINE16 = 17,
     STYLE_ID_INLINE17 = 18,
-    STYLE_ID_DEFAULT_24 = 19,
+    STYLE_ID_DEFAULT_XL = 19,
     STYLE_ID_BUTTON = 20,
     STYLE_ID_BUTTON_DISABLED = 21,
     STYLE_ID_INLINE21 = 22,
@@ -136,7 +136,7 @@ enum StylesEnum {
     STYLE_ID_SWITCH_WIDGET = 29,
     STYLE_ID_SLIDER_WIDGET = 30,
     STYLE_ID_DROP_DOWN_LIST = 31,
-    STYLE_ID_DEFAULT_38 = 32,
+    STYLE_ID_DEFAULT_XXL = 32,
     STYLE_ID_TEXT_BUTTON = 33,
     STYLE_ID_TEXT_BUTTON_DISABLED = 34,
     STYLE_ID_BUTTON_ICON = 35,
@@ -212,7 +212,7 @@ enum PagesEnum {
     PAGE_ID_LOADER = 7
 };
 
-extern const uint8_t assets[66858];
+extern const uint8_t assets[66860];
 
 #elif defined(EEZ_PLATFORM_SIMULATOR)
 
@@ -334,7 +334,7 @@ enum StylesEnum {
     STYLE_ID_INLINE15 = 16,
     STYLE_ID_INLINE16 = 17,
     STYLE_ID_INLINE17 = 18,
-    STYLE_ID_DEFAULT_24 = 19,
+    STYLE_ID_DEFAULT_XL = 19,
     STYLE_ID_BUTTON = 20,
     STYLE_ID_BUTTON_DISABLED = 21,
     STYLE_ID_INLINE21 = 22,
@@ -347,7 +347,7 @@ enum StylesEnum {
     STYLE_ID_SWITCH_WIDGET = 29,
     STYLE_ID_SLIDER_WIDGET = 30,
     STYLE_ID_DROP_DOWN_LIST = 31,
-    STYLE_ID_DEFAULT_38 = 32,
+    STYLE_ID_DEFAULT_XXL = 32,
     STYLE_ID_TEXT_BUTTON = 33,
     STYLE_ID_TEXT_BUTTON_DISABLED = 34,
     STYLE_ID_BUTTON_ICON = 35,
@@ -426,7 +426,7 @@ enum PagesEnum {
     PAGE_ID_LOADER = 8
 };
 
-extern const uint8_t assets[83298];
+extern const uint8_t assets[83300];
 
 #endif
 
