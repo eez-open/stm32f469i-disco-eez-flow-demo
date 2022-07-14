@@ -23,7 +23,8 @@ enum DataEnum {
     DATA_ID_KEYPAD_OPTION3_ENABLED = 11,
     DATA_ID_KEYPAD_OPTION3_TEXT = 12,
     DATA_ID_KEYPAD_MODE = 13,
-    DATA_ID_KEYPAD_OK_ENABLED = 14
+    DATA_ID_KEYPAD_OK_ENABLED = 14,
+    DATA_ID_TEMPERATURE = 15
 };
 
 void data_none(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
@@ -41,6 +42,7 @@ void data_keypad_option3_enabled(DataOperationEnum operation, const WidgetCursor
 void data_keypad_option3_text(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
 void data_keypad_mode(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
 void data_keypad_ok_enabled(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_temperature(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
 
 typedef void (*DataOperationsFunction)(DataOperationEnum operation, const WidgetCursor &widgetCursor, Value &value);
 
@@ -124,27 +126,28 @@ enum StylesEnum {
     STYLE_ID_DEFAULT_24 = 19,
     STYLE_ID_BUTTON = 20,
     STYLE_ID_BUTTON_DISABLED = 21,
-    STYLE_ID_TAB = 22,
-    STYLE_ID_QUOTE = 23,
-    STYLE_ID_INLINE23 = 24,
+    STYLE_ID_INLINE21 = 22,
+    STYLE_ID_TAB = 23,
+    STYLE_ID_QUOTE = 24,
     STYLE_ID_INLINE24 = 25,
     STYLE_ID_INLINE25 = 26,
-    STYLE_ID_TEXT_INPUT = 27,
-    STYLE_ID_SWITCH_WIDGET = 28,
-    STYLE_ID_SLIDER_WIDGET = 29,
-    STYLE_ID_DROP_DOWN_LIST = 30,
-    STYLE_ID_DEFAULT_38 = 31,
-    STYLE_ID_TEXT_BUTTON = 32,
-    STYLE_ID_TEXT_BUTTON_DISABLED = 33,
-    STYLE_ID_BUTTON_ICON = 34,
-    STYLE_ID_TEXT_BUTTON_ICON = 35,
-    STYLE_ID_TEXT_BUTTON_ICON_DISABLED = 36,
-    STYLE_ID_ROLLER_WIDGET = 37,
-    STYLE_ID_ROLLER_WIDGET_SELECTED_VALUE = 38,
-    STYLE_ID_ROLLER_WIDGET_UNSELECTED_VALUE = 39,
-    STYLE_ID_LABEL_LEFT_ALIGNED = 40,
-    STYLE_ID_BUTTON_LARGE = 41,
-    STYLE_ID_BLOCK = 42
+    STYLE_ID_INLINE26 = 27,
+    STYLE_ID_TEXT_INPUT = 28,
+    STYLE_ID_SWITCH_WIDGET = 29,
+    STYLE_ID_SLIDER_WIDGET = 30,
+    STYLE_ID_DROP_DOWN_LIST = 31,
+    STYLE_ID_DEFAULT_38 = 32,
+    STYLE_ID_TEXT_BUTTON = 33,
+    STYLE_ID_TEXT_BUTTON_DISABLED = 34,
+    STYLE_ID_BUTTON_ICON = 35,
+    STYLE_ID_TEXT_BUTTON_ICON = 36,
+    STYLE_ID_TEXT_BUTTON_ICON_DISABLED = 37,
+    STYLE_ID_ROLLER_WIDGET = 38,
+    STYLE_ID_ROLLER_WIDGET_SELECTED_VALUE = 39,
+    STYLE_ID_ROLLER_WIDGET_UNSELECTED_VALUE = 40,
+    STYLE_ID_LABEL_LEFT_ALIGNED = 41,
+    STYLE_ID_BUTTON_LARGE = 42,
+    STYLE_ID_BLOCK = 43
 };
 
 enum ThemesEnum {
@@ -209,7 +212,7 @@ enum PagesEnum {
     PAGE_ID_LOADER = 7
 };
 
-extern const uint8_t assets[66773];
+extern const uint8_t assets[66858];
 
 #elif defined(EEZ_PLATFORM_SIMULATOR)
 
@@ -229,7 +232,8 @@ enum DataEnum {
     DATA_ID_KEYPAD_OPTION3_TEXT = 12,
     DATA_ID_KEYPAD_MODE = 13,
     DATA_ID_KEYPAD_OK_ENABLED = 14,
-    DATA_ID_MAIN_APP_VIEW = 15
+    DATA_ID_MAIN_APP_VIEW = 15,
+    DATA_ID_TEMPERATURE = 16
 };
 
 void data_none(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
@@ -248,6 +252,7 @@ void data_keypad_option3_text(DataOperationEnum operation, const WidgetCursor &c
 void data_keypad_mode(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
 void data_keypad_ok_enabled(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
 void data_main_app_view(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_temperature(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
 
 typedef void (*DataOperationsFunction)(DataOperationEnum operation, const WidgetCursor &widgetCursor, Value &value);
 
@@ -332,28 +337,29 @@ enum StylesEnum {
     STYLE_ID_DEFAULT_24 = 19,
     STYLE_ID_BUTTON = 20,
     STYLE_ID_BUTTON_DISABLED = 21,
-    STYLE_ID_TAB = 22,
-    STYLE_ID_QUOTE = 23,
-    STYLE_ID_INLINE23 = 24,
+    STYLE_ID_INLINE21 = 22,
+    STYLE_ID_TAB = 23,
+    STYLE_ID_QUOTE = 24,
     STYLE_ID_INLINE24 = 25,
     STYLE_ID_INLINE25 = 26,
-    STYLE_ID_TEXT_INPUT = 27,
-    STYLE_ID_SWITCH_WIDGET = 28,
-    STYLE_ID_SLIDER_WIDGET = 29,
-    STYLE_ID_DROP_DOWN_LIST = 30,
-    STYLE_ID_DEFAULT_38 = 31,
-    STYLE_ID_TEXT_BUTTON = 32,
-    STYLE_ID_TEXT_BUTTON_DISABLED = 33,
-    STYLE_ID_BUTTON_ICON = 34,
-    STYLE_ID_TEXT_BUTTON_ICON = 35,
-    STYLE_ID_TEXT_BUTTON_ICON_DISABLED = 36,
-    STYLE_ID_ROLLER_WIDGET = 37,
-    STYLE_ID_ROLLER_WIDGET_SELECTED_VALUE = 38,
-    STYLE_ID_ROLLER_WIDGET_UNSELECTED_VALUE = 39,
-    STYLE_ID_LABEL_LEFT_ALIGNED = 40,
-    STYLE_ID_BUTTON_LARGE = 41,
-    STYLE_ID_INLINE41 = 42,
-    STYLE_ID_BLOCK = 43
+    STYLE_ID_INLINE26 = 27,
+    STYLE_ID_TEXT_INPUT = 28,
+    STYLE_ID_SWITCH_WIDGET = 29,
+    STYLE_ID_SLIDER_WIDGET = 30,
+    STYLE_ID_DROP_DOWN_LIST = 31,
+    STYLE_ID_DEFAULT_38 = 32,
+    STYLE_ID_TEXT_BUTTON = 33,
+    STYLE_ID_TEXT_BUTTON_DISABLED = 34,
+    STYLE_ID_BUTTON_ICON = 35,
+    STYLE_ID_TEXT_BUTTON_ICON = 36,
+    STYLE_ID_TEXT_BUTTON_ICON_DISABLED = 37,
+    STYLE_ID_ROLLER_WIDGET = 38,
+    STYLE_ID_ROLLER_WIDGET_SELECTED_VALUE = 39,
+    STYLE_ID_ROLLER_WIDGET_UNSELECTED_VALUE = 40,
+    STYLE_ID_LABEL_LEFT_ALIGNED = 41,
+    STYLE_ID_BUTTON_LARGE = 42,
+    STYLE_ID_INLINE42 = 43,
+    STYLE_ID_BLOCK = 44
 };
 
 enum ThemesEnum {
@@ -420,7 +426,7 @@ enum PagesEnum {
     PAGE_ID_LOADER = 8
 };
 
-extern const uint8_t assets[83231];
+extern const uint8_t assets[83298];
 
 #endif
 

@@ -144,6 +144,13 @@
         "type": "integer",
         "defaultValue": "1",
         "persistent": false
+      },
+      {
+        "name": "temperature",
+        "type": "float",
+        "defaultValue": "0",
+        "persistent": false,
+        "native": true
       }
     ],
     "structures": [],
@@ -421,6 +428,22 @@
           "customInputs": [],
           "customOutputs": [],
           "page": "input_demo"
+        },
+        {
+          "type": "TextWidget",
+          "left": 628,
+          "top": 0,
+          "width": 162,
+          "height": 44,
+          "wireID": "7186d515-d01f-438d-edec-ea83a4766a95",
+          "customInputs": [],
+          "customOutputs": [],
+          "data": "temperature + \" oC\"",
+          "style": {
+            "inheritFrom": "default",
+            "alignHorizontal": "right"
+          },
+          "timeline": []
         }
       ],
       "connectionLines": [

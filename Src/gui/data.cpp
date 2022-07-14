@@ -41,5 +41,9 @@ void data_time_sub_second(DataOperationEnum operation, const WidgetCursor &widge
     value = date_time::g_dateTime.subSecond;
 }
 
+void data_temperature(DataOperationEnum operation, const WidgetCursor &widgetCursor, Value &value) {
+    value = Value(g_temperature, VALUE_TYPE_FLOAT);
+}
+
 } // namespace gui
 } // namespace eez

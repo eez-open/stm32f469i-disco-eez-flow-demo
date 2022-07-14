@@ -26,6 +26,11 @@
 #include <eez/gui/touch.h>
 
 #include "tasks.h"
+#include "firmware.h"
+
+#if defined(EEZ_PLATFORM_STM32)
+#include "adc.h"
+#endif
 
 using namespace eez;
 
@@ -166,6 +171,36 @@ void lowPriorityThreadOneIter() {
     g_lastTickCountMs = millis();
 
     hmi::tick();
+
+#if defined(EEZ_PLATFORM_STM32)
+    static uint32_t g_lastTickCountMsTempRead;
+
+    if (g_lastTickCountMsTempRead - g_lastTickCountMs > 3000) {
+        g_lastTickCountMsTempRead = g_lastTickCountMs;
+
+        __HAL_ADC_ENABLE(&hadc1);
+        HAL_ADC_Start(&hadc1);
+        if (HAL_ADC_PollForConversion(&hadc1, 100) == HAL_OK) {
+            const uint16_t* const ADC_TEMP_3V3_30C =  reinterpret_cast<uint16_t*>(0x1FFF7A2C);
+            const uint16_t* const ADC_TEMP_3V3_110C =  reinterpret_cast<uint16_t*>(0x1FFF7A2E);
+            const float CALIBRATION_REFERENCE_VOLTAGE = 3.3F;
+
+            const float REFERENCE_VOLTAGE = 3.0F; // supplied with Vref+ or VDDA
+
+            // scale constants to current reference voltage
+            float adcCalTemp30C = static_cast<float>(*ADC_TEMP_3V3_30C) * (REFERENCE_VOLTAGE/CALIBRATION_REFERENCE_VOLTAGE);
+            float adcCalTemp110C = static_cast<float>(*ADC_TEMP_3V3_110C) * (REFERENCE_VOLTAGE/CALIBRATION_REFERENCE_VOLTAGE);
+
+            uint16_t adcTempValue = HAL_ADC_GetValue(&hadc1);
+
+            g_temperature = (static_cast<float>(adcTempValue) - adcCalTemp30C)/(adcCalTemp110C - adcCalTemp30C) * (110.0F - 30.0F) + 30.0F;        
+
+            g_temperature = roundf(g_temperature);
+
+            HAL_ADC_Stop(&hadc1);
+        }
+    }
+#endif
 
 	return;
 }

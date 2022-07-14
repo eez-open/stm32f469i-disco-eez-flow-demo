@@ -23,3 +23,5 @@ extern "C" void tick();
 
 void updateBrightness();
 void serialWrite(const char *msg, int msgLen = -1);
+
+extern float g_temperature;

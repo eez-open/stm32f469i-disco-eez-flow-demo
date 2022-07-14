@@ -35,6 +35,8 @@ TouchScreenCalibrationParams g_touchScreenCalibrationParams;
 
 void LCD_init();
 
+float g_temperature = 24.0f;
+
 using namespace eez;
 
 #if defined(__EMSCRIPTEN__)

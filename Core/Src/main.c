@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "adc.h"
 #include "crc.h"
 #include "dma2d.h"
 #include "dsihost.h"
@@ -78,7 +79,8 @@ int main(void)
 #if 1
   HAL_Init();
   SystemClock_Config();
-  //MY_LCD_Init();
+  MX_GPIO_Init();
+  MX_ADC1_Init();
 #else
   /* USER CODE END 1 */
 
@@ -116,6 +118,7 @@ int main(void)
   MX_USART3_UART_Init();
   MX_USART6_UART_Init();
   MX_FATFS_Init();
+  MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
 #endif
   /* USER CODE END 2 */
