@@ -33,6 +33,7 @@
   "variables": {
     "globalVariables": [
       {
+        "id": 1,
         "name": "alert_message",
         "description": "Message in alert dialog",
         "type": "string",
@@ -40,6 +41,7 @@
         "native": true
       },
       {
+        "id": 2,
         "name": "keypad_text",
         "type": "string",
         "defaultValue": "\"\"",
@@ -47,6 +49,7 @@
         "native": true
       },
       {
+        "id": 3,
         "name": "keypad_edit_unit",
         "type": "string",
         "defaultValue": "\"\"",
@@ -54,6 +57,7 @@
         "native": true
       },
       {
+        "id": 4,
         "name": "keypad_sign_enabled",
         "type": "boolean",
         "defaultValue": "false",
@@ -61,6 +65,7 @@
         "native": true
       },
       {
+        "id": 5,
         "name": "keypad_unit_enabled",
         "type": "boolean",
         "defaultValue": "false",
@@ -68,6 +73,7 @@
         "native": true
       },
       {
+        "id": 6,
         "name": "keypad_dot_enabled",
         "type": "boolean",
         "defaultValue": "false",
@@ -75,6 +81,7 @@
         "native": true
       },
       {
+        "id": 7,
         "name": "keypad_option1_enabled",
         "type": "boolean",
         "defaultValue": "false",
@@ -82,6 +89,7 @@
         "native": true
       },
       {
+        "id": 8,
         "name": "keypad_option1_text",
         "type": "string",
         "defaultValue": "\"\"",
@@ -89,6 +97,7 @@
         "native": true
       },
       {
+        "id": 9,
         "name": "keypad_option2_enabled",
         "type": "boolean",
         "defaultValue": "false",
@@ -96,6 +105,7 @@
         "native": true
       },
       {
+        "id": 10,
         "name": "keypad_option2_text",
         "type": "string",
         "defaultValue": "\"\"",
@@ -103,6 +113,7 @@
         "native": true
       },
       {
+        "id": 11,
         "name": "keypad_option3_enabled",
         "type": "boolean",
         "defaultValue": "false",
@@ -110,6 +121,7 @@
         "native": true
       },
       {
+        "id": 12,
         "name": "keypad_option3_text",
         "type": "string",
         "defaultValue": "\"\"",
@@ -117,6 +129,7 @@
         "native": true
       },
       {
+        "id": 13,
         "name": "keypad_mode",
         "type": "integer",
         "defaultValue": "0",
@@ -124,11 +137,18 @@
         "native": true
       },
       {
+        "id": 14,
         "name": "keypad_ok_enabled",
         "type": "boolean",
         "defaultValue": "false",
         "persistent": false,
         "native": true
+      },
+      {
+        "name": "roller_value",
+        "type": "integer",
+        "defaultValue": "1",
+        "persistent": false
       },
       {
         "name": "main_app_view",
@@ -138,12 +158,6 @@
           "simulator"
         ],
         "native": true
-      },
-      {
-        "name": "roller_value",
-        "type": "integer",
-        "defaultValue": "1",
-        "persistent": false
       },
       {
         "name": "temperature",
@@ -161,6 +175,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 1,
       "name": "yes",
       "implementationType": "native"
     },
@@ -168,6 +183,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 2,
       "name": "no",
       "implementationType": "native"
     },
@@ -175,6 +191,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 3,
       "name": "cancel",
       "implementationType": "native"
     },
@@ -182,6 +199,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 4,
       "name": "edit",
       "implementationType": "native"
     },
@@ -189,6 +207,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 5,
       "name": "drag_overlay",
       "implementationType": "native"
     },
@@ -196,6 +215,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 6,
       "name": "scroll",
       "implementationType": "native"
     },
@@ -203,6 +223,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 7,
       "name": "keypad_key",
       "implementationType": "native"
     },
@@ -210,6 +231,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 8,
       "name": "keypad_back",
       "implementationType": "native"
     },
@@ -217,6 +239,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 9,
       "name": "keypad_unit",
       "implementationType": "native"
     },
@@ -224,6 +247,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 10,
       "name": "keypad_option1",
       "implementationType": "native"
     },
@@ -231,6 +255,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 11,
       "name": "keypad_option2",
       "implementationType": "native"
     },
@@ -238,6 +263,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 12,
       "name": "keypad_option3",
       "implementationType": "native"
     },
@@ -245,6 +271,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 13,
       "name": "keypad_sign",
       "implementationType": "native"
     },
@@ -252,6 +279,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 14,
       "name": "keypad_ok",
       "implementationType": "native"
     },
@@ -259,6 +287,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 15,
       "name": "keypad_cancel",
       "implementationType": "native"
     },
@@ -266,6 +295,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 16,
       "name": "toggle_keypad_mode",
       "implementationType": "native"
     },
@@ -273,6 +303,7 @@
       "components": [],
       "connectionLines": [],
       "localVariables": [],
+      "id": 17,
       "name": "keypad_space",
       "implementationType": "native"
     }
@@ -5575,6 +5606,217 @@
   ],
   "styles": [
     {
+      "id": 1,
+      "name": "default",
+      "description": "",
+      "inheritFrom": "",
+      "font": "text_M",
+      "alignHorizontal": "center",
+      "alignVertical": "center",
+      "color": "text",
+      "backgroundColor": "background",
+      "activeColor": "background",
+      "activeBackgroundColor": "text",
+      "borderColor": "border",
+      "padding": "0"
+    },
+    {
+      "id": 2,
+      "name": "info_alert",
+      "inheritFrom": "default",
+      "alwaysBuild": true,
+      "padding": "20",
+      "margin": "20"
+    },
+    {
+      "id": 3,
+      "name": "error_alert",
+      "inheritFrom": "default",
+      "alwaysBuild": true,
+      "color": "dark_text",
+      "backgroundColor": "error",
+      "activeColor": "error",
+      "activeBackgroundColor": "dark_text",
+      "padding": "20",
+      "margin": "20"
+    },
+    {
+      "id": 4,
+      "name": "error_alert_button",
+      "inheritFrom": "button",
+      "alwaysBuild": true,
+      "padding": "8 16 8 16"
+    },
+    {
+      "id": 5,
+      "name": "select_enum_item_popup_container",
+      "inheritFrom": "default",
+      "alwaysBuild": true,
+      "font": "text_L",
+      "color": "drop_down_list_color",
+      "backgroundColor": "drop_down_list_background",
+      "activeColor": "drop_down_list_background",
+      "activeBackgroundColor": "drop_down_list_color",
+      "padding": "12"
+    },
+    {
+      "id": 6,
+      "name": "select_enum_item_popup_container_S",
+      "inheritFrom": "select_enum_item_popup_container",
+      "alwaysBuild": true,
+      "font": "text_M"
+    },
+    {
+      "id": 7,
+      "name": "select_enum_item_popup_item",
+      "inheritFrom": "select_enum_item_popup_container",
+      "alwaysBuild": true,
+      "padding": "6"
+    },
+    {
+      "id": 8,
+      "name": "select_enum_item_popup_item_S",
+      "inheritFrom": "select_enum_item_popup_container_S",
+      "alwaysBuild": true,
+      "alignHorizontal": "left",
+      "padding": "6"
+    },
+    {
+      "id": 9,
+      "name": "select_enum_item_popup_disabled_item",
+      "inheritFrom": "select_enum_item_popup_item",
+      "alwaysBuild": true,
+      "color": "drop_down_list_color_disabled"
+    },
+    {
+      "id": 10,
+      "name": "select_enum_item_popup_disabled_item_S",
+      "inheritFrom": "select_enum_item_popup_item_S",
+      "alwaysBuild": true,
+      "color": "drop_down_list_color_disabled"
+    },
+    {
+      "id": 11,
+      "name": "menu_with_buttons_message",
+      "inheritFrom": "default",
+      "alwaysBuild": true,
+      "alignVertical": "top",
+      "color": "text",
+      "backgroundColor": "background",
+      "activeColor": "background",
+      "activeBackgroundColor": "text",
+      "padding": "0 0 10 0",
+      "margin": "0"
+    },
+    {
+      "id": 12,
+      "name": "menu_with_buttons_container",
+      "inheritFrom": "default",
+      "alwaysBuild": true,
+      "padding": "20",
+      "margin": "20"
+    },
+    {
+      "id": 13,
+      "name": "menu_with_buttons_button",
+      "inheritFrom": "button",
+      "alwaysBuild": true,
+      "padding": "0 4",
+      "margin": "0"
+    },
+    {
+      "id": 14,
+      "name": "fps_graph",
+      "inheritFrom": "default",
+      "alwaysBuild": true,
+      "color": "#00ff1e",
+      "backgroundColor": "#000000",
+      "borderSize": "1",
+      "borderColor": "backdrop"
+    },
+    {
+      "id": 15,
+      "name": "slider_widget",
+      "inheritFrom": "default",
+      "color": "slider_widget_color",
+      "backgroundColor": "slider_widget_background"
+    },
+    {
+      "id": 16,
+      "name": "switch_widget",
+      "inheritFrom": "default",
+      "color": "switch_widget_color",
+      "backgroundColor": "switch_widget_background_off",
+      "activeColor": "switch_widget_color",
+      "activeBackgroundColor": "switch_widget_background_on",
+      "focusColor": "switch_widget_color",
+      "borderSize": "2",
+      "borderColor": "switch_widget_border",
+      "padding": "3 0"
+    },
+    {
+      "id": 17,
+      "name": "drop_down_list",
+      "inheritFrom": "default",
+      "color": "drop_down_list_color",
+      "backgroundColor": "drop_down_list_background",
+      "activeColor": "drop_down_list_color",
+      "activeBackgroundColor": "drop_down_list_active_background",
+      "borderColor": "drop_down_list_border"
+    },
+    {
+      "id": 18,
+      "name": "roller_widget",
+      "inheritFrom": "default"
+    },
+    {
+      "id": 19,
+      "name": "roller_widget_selected_value",
+      "inheritFrom": "default_XXL",
+      "borderSize": "2",
+      "borderRadius": "4",
+      "borderColor": "#c0c0c0"
+    },
+    {
+      "id": 20,
+      "name": "roller_widget_unselected_value",
+      "inheritFrom": "default_XL",
+      "color": "#808080"
+    },
+    {
+      "id": 21,
+      "name": "background",
+      "inheritFrom": "default",
+      "backgroundColor": "background"
+    },
+    {
+      "id": 22,
+      "name": "button",
+      "inheritFrom": "default",
+      "color": "button_text",
+      "backgroundColor": "button_background",
+      "activeColor": "button_text",
+      "activeBackgroundColor": "button_active_background",
+      "borderColor": "button_border"
+    },
+    {
+      "id": 23,
+      "name": "button_disabled",
+      "inheritFrom": "button",
+      "color": "button_disabled_text",
+      "backgroundColor": "button_disabled_background",
+      "activeColor": "button_disabled_text",
+      "activeBackgroundColor": "button_disabled_background",
+      "borderColor": "button_disabled_border"
+    },
+    {
+      "id": 24,
+      "name": "note_M",
+      "inheritFrom": "default",
+      "color": "dark_text",
+      "backgroundColor": "note"
+    },
+    {
       "name": "quote",
       "inheritFrom": "default_L"
     },
@@ -5668,193 +5910,6 @@
       "name": "text_button_icon_disabled",
       "inheritFrom": "text_button_disabled",
       "font": "icons"
-    },
-    {
-      "name": "default",
-      "description": "",
-      "inheritFrom": "",
-      "font": "text_M",
-      "alignHorizontal": "center",
-      "alignVertical": "center",
-      "color": "text",
-      "backgroundColor": "background",
-      "activeColor": "background",
-      "activeBackgroundColor": "text",
-      "borderColor": "border",
-      "padding": "0"
-    },
-    {
-      "name": "info_alert",
-      "inheritFrom": "default",
-      "alwaysBuild": true,
-      "padding": "20",
-      "margin": "20"
-    },
-    {
-      "name": "error_alert",
-      "inheritFrom": "default",
-      "alwaysBuild": true,
-      "color": "dark_text",
-      "backgroundColor": "error",
-      "activeColor": "error",
-      "activeBackgroundColor": "dark_text",
-      "padding": "20",
-      "margin": "20"
-    },
-    {
-      "name": "error_alert_button",
-      "inheritFrom": "button",
-      "alwaysBuild": true,
-      "padding": "8 16 8 16"
-    },
-    {
-      "name": "select_enum_item_popup_container",
-      "inheritFrom": "default",
-      "alwaysBuild": true,
-      "font": "text_L",
-      "color": "drop_down_list_color",
-      "backgroundColor": "drop_down_list_background",
-      "activeColor": "drop_down_list_background",
-      "activeBackgroundColor": "drop_down_list_color",
-      "padding": "12"
-    },
-    {
-      "name": "select_enum_item_popup_container_S",
-      "inheritFrom": "select_enum_item_popup_container",
-      "alwaysBuild": true,
-      "font": "text_M"
-    },
-    {
-      "name": "select_enum_item_popup_item",
-      "inheritFrom": "select_enum_item_popup_container",
-      "alwaysBuild": true,
-      "padding": "6"
-    },
-    {
-      "name": "select_enum_item_popup_item_S",
-      "inheritFrom": "select_enum_item_popup_container_S",
-      "alwaysBuild": true,
-      "alignHorizontal": "left",
-      "padding": "6"
-    },
-    {
-      "name": "select_enum_item_popup_disabled_item",
-      "inheritFrom": "select_enum_item_popup_item",
-      "alwaysBuild": true,
-      "color": "drop_down_list_color_disabled"
-    },
-    {
-      "name": "select_enum_item_popup_disabled_item_S",
-      "inheritFrom": "select_enum_item_popup_item_S",
-      "alwaysBuild": true,
-      "color": "drop_down_list_color_disabled"
-    },
-    {
-      "name": "menu_with_buttons_message",
-      "inheritFrom": "default",
-      "alwaysBuild": true,
-      "alignVertical": "top",
-      "color": "text",
-      "backgroundColor": "background",
-      "activeColor": "background",
-      "activeBackgroundColor": "text",
-      "padding": "0 0 10 0",
-      "margin": "0"
-    },
-    {
-      "name": "menu_with_buttons_container",
-      "inheritFrom": "default",
-      "alwaysBuild": true,
-      "padding": "20",
-      "margin": "20"
-    },
-    {
-      "name": "menu_with_buttons_button",
-      "inheritFrom": "button",
-      "alwaysBuild": true,
-      "padding": "0 4",
-      "margin": "0"
-    },
-    {
-      "name": "fps_graph",
-      "inheritFrom": "default",
-      "alwaysBuild": true,
-      "color": "#00ff1e",
-      "backgroundColor": "#000000",
-      "borderSize": "1",
-      "borderColor": "backdrop"
-    },
-    {
-      "name": "slider_widget",
-      "inheritFrom": "default",
-      "color": "slider_widget_color",
-      "backgroundColor": "slider_widget_background"
-    },
-    {
-      "name": "switch_widget",
-      "inheritFrom": "default",
-      "color": "switch_widget_color",
-      "backgroundColor": "switch_widget_background_off",
-      "activeColor": "switch_widget_color",
-      "activeBackgroundColor": "switch_widget_background_on",
-      "focusColor": "switch_widget_color",
-      "borderSize": "2",
-      "borderColor": "switch_widget_border",
-      "padding": "3 0"
-    },
-    {
-      "name": "background",
-      "inheritFrom": "default",
-      "backgroundColor": "background"
-    },
-    {
-      "name": "button",
-      "inheritFrom": "default",
-      "color": "button_text",
-      "backgroundColor": "button_background",
-      "activeColor": "button_text",
-      "activeBackgroundColor": "button_active_background",
-      "borderColor": "button_border"
-    },
-    {
-      "name": "button_disabled",
-      "inheritFrom": "button",
-      "color": "button_disabled_text",
-      "backgroundColor": "button_disabled_background",
-      "activeColor": "button_disabled_text",
-      "activeBackgroundColor": "button_disabled_background",
-      "borderColor": "button_disabled_border"
-    },
-    {
-      "name": "note_M",
-      "inheritFrom": "default",
-      "color": "dark_text",
-      "backgroundColor": "note"
-    },
-    {
-      "name": "drop_down_list",
-      "inheritFrom": "default",
-      "color": "drop_down_list_color",
-      "backgroundColor": "drop_down_list_background",
-      "activeColor": "drop_down_list_color",
-      "activeBackgroundColor": "drop_down_list_active_background",
-      "borderColor": "drop_down_list_border"
-    },
-    {
-      "name": "roller_widget",
-      "inheritFrom": "default"
-    },
-    {
-      "name": "roller_widget_selected_value",
-      "inheritFrom": "default_XXL",
-      "borderSize": "2",
-      "borderRadius": "4",
-      "borderColor": "#c0c0c0"
-    },
-    {
-      "name": "roller_widget_unselected_value",
-      "inheritFrom": "default_XL",
-      "color": "#808080"
     }
   ],
   "fonts": [
@@ -9381,6 +9436,7 @@
       "alwaysBuild": false
     },
     {
+      "id": 1,
       "name": "text_M",
       "renderingEngine": "freetype",
       "source": {
@@ -16434,6 +16490,7 @@
       "alwaysBuild": true
     },
     {
+      "id": 2,
       "name": "shadow",
       "renderingEngine": "freetype",
       "source": {
