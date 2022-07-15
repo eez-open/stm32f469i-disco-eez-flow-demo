@@ -2539,6 +2539,21 @@
                 "inheritFrom": "text_input"
               },
               "timeline": []
+            },
+            {
+              "type": "TextWidget",
+              "left": 363,
+              "top": 11,
+              "width": 95,
+              "height": 39,
+              "wireID": "e057e693-6a03-46b7-f407-907ce9d79d63",
+              "customInputs": [],
+              "customOutputs": [],
+              "data": "\"seconds\"",
+              "style": {
+                "inheritFrom": "default"
+              },
+              "timeline": []
             }
           ],
           "layout": "static"
