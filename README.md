@@ -18,8 +18,8 @@ First, build the project `Src\stm32f469i-disco-eez-flow-demo.eez-project` using 
 sudo apt-get update
 sudo apt-get install -y git libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev cmake build-essential libbsd-dev
 cd stm32f469i-disco-eez-flow-demo
-mkdir -p build/linux
-cd build/linux
+mkdir -p Src/build/linux
+cd Src/build/linux
 cmake ../..
 make
 ```
@@ -49,11 +49,11 @@ set SDL2IMAGEDIR=..\SDL2_image-2.0.4
 Execute `cmake.bat`:
 
 ```
-cd stm32f469i-disco-eez-flow-demo
+cd stm32f469i-disco-eez-flow-demo\Src
 .\cmake.bat
 ```
 
-Visual Studio solution is created in `stm32f469i-disco-eez-flow-demo\build\win32`.
+Visual Studio solution is created in `stm32f469i-disco-eez-flow-demo\Src\build\win32`.
 
 Use Visual Studio to build the solution.
 
@@ -66,8 +66,8 @@ These instructions are for the Linux.
 ```
 source /path/to/emsdk/emsdk_env.sh
 export EMSCRIPTEN=/path/to/emsdk/upstream/emscripten
-mkdir -p stm32f469i-disco-eez-flow-demo/build/emscripten
-cd stm32f469i-disco-eez-flow-demo/build/emscripten
+mkdir -p stm32f469i-disco-eez-flow-demo/Src/build/emscripten
+cd stm32f469i-disco-eez-flow-demo/Src/build/emscripten
 cmake -DCMAKE_TOOLCHAIN_FILE=../../cmake/Emscripten.cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" ../..
 make
 ```
