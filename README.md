@@ -10,8 +10,6 @@ Get the source with:
 
 ```git clone --recurse-submodules https://github.com/eez-open/stm32f469i-disco-eez-flow-demo```
 
-First, build the project `Src\stm32f469i-disco-eez-flow-demo.eez-project` using EEZ Studio.
-
 #### Linux
 
 ```
