@@ -130,10 +130,10 @@ enum StylesEnum {
     STYLE_ID_BUTTON = 22,
     STYLE_ID_BUTTON_DISABLED = 23,
     STYLE_ID_NOTE_M = 24,
-    STYLE_ID_INLINE24 = 25,
+    STYLE_ID_DEFAULT_XL = 25,
     STYLE_ID_INLINE25 = 26,
     STYLE_ID_INLINE26 = 27,
-    STYLE_ID_DEFAULT_XL = 28,
+    STYLE_ID_INLINE27 = 28,
     STYLE_ID_INLINE28 = 29,
     STYLE_ID_TAB = 30,
     STYLE_ID_QUOTE = 31,
@@ -223,7 +223,7 @@ enum PagesEnum {
     PAGE_ID_LINE_CHART = 8
 };
 
-extern const uint8_t assets[76627];
+extern const uint8_t assets[76889];
 
 #elif defined(EEZ_PLATFORM_SIMULATOR)
 
@@ -352,10 +352,10 @@ enum StylesEnum {
     STYLE_ID_BUTTON = 22,
     STYLE_ID_BUTTON_DISABLED = 23,
     STYLE_ID_NOTE_M = 24,
-    STYLE_ID_INLINE24 = 25,
+    STYLE_ID_DEFAULT_XL = 25,
     STYLE_ID_INLINE25 = 26,
     STYLE_ID_INLINE26 = 27,
-    STYLE_ID_DEFAULT_XL = 28,
+    STYLE_ID_INLINE27 = 28,
     STYLE_ID_INLINE28 = 29,
     STYLE_ID_TAB = 30,
     STYLE_ID_QUOTE = 31,
@@ -447,7 +447,7 @@ enum PagesEnum {
     PAGE_ID_LINE_CHART = 9
 };
 
-extern const uint8_t assets[93078];
+extern const uint8_t assets[93365];
 
 #endif
 
