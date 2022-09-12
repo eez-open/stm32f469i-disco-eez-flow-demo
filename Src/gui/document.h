@@ -96,7 +96,8 @@ enum FontsEnum {
     FONT_ID_ICONS = 3,
     FONT_ID_TEXT_L = 4,
     FONT_ID_TEXT_XXL = 5,
-    FONT_ID_TEXT_XL = 6
+    FONT_ID_TEXT_XL = 6,
+    FONT_ID_TEXT_S = 7
 };
 
 enum BitmapsEnum {
@@ -148,7 +149,10 @@ enum StylesEnum {
     STYLE_ID_TEXT_BUTTON_ICON_DISABLED = 41,
     STYLE_ID_LABEL_LEFT_ALIGNED = 42,
     STYLE_ID_BUTTON_LARGE = 43,
-    STYLE_ID_BLOCK = 44
+    STYLE_ID_BLOCK = 44,
+    STYLE_ID_LINE_CHART = 45,
+    STYLE_ID_LINE_CHART_LEGEND = 46,
+    STYLE_ID_LINE_CHART_AXIS = 47
 };
 
 enum ThemesEnum {
@@ -199,7 +203,12 @@ enum ColorsEnum {
 	COLOR_ID_CUSTOM_EC2A15 = 39,
 	COLOR_ID_CUSTOM_B9F3F0 = 40,
 	COLOR_ID_CUSTOM_EEE30F = 41,
-	COLOR_ID_CUSTOM_C8C8C8 = 42
+	COLOR_ID_CUSTOM_C8C8C8 = 42,
+	COLOR_ID_CUSTOM_FFFFFF = 43,
+	COLOR_ID_CUSTOM_202020 = 44,
+	COLOR_ID_CUSTOM_9E0000 = 45,
+	COLOR_ID_CUSTOM_0000A3 = 46,
+	COLOR_ID_CUSTOM_00A800 = 47
 };
 
 enum PagesEnum {
@@ -210,10 +219,11 @@ enum PagesEnum {
     PAGE_ID_NUMERIC_KEYPAD = 4,
     PAGE_ID_KEYBOARD = 5,
     PAGE_ID_ROLLER_INPUT_DEMO = 6,
-    PAGE_ID_LOADER = 7
+    PAGE_ID_LOADER = 7,
+    PAGE_ID_LINE_CHART = 8
 };
 
-extern const uint8_t assets[66899];
+extern const uint8_t assets[76627];
 
 #elif defined(EEZ_PLATFORM_SIMULATOR)
 
@@ -307,7 +317,8 @@ enum FontsEnum {
     FONT_ID_ICONS = 3,
     FONT_ID_TEXT_L = 4,
     FONT_ID_TEXT_XXL = 5,
-    FONT_ID_TEXT_XL = 6
+    FONT_ID_TEXT_XL = 6,
+    FONT_ID_TEXT_S = 7
 };
 
 enum BitmapsEnum {
@@ -361,7 +372,10 @@ enum StylesEnum {
     STYLE_ID_LABEL_LEFT_ALIGNED = 42,
     STYLE_ID_BUTTON_LARGE = 43,
     STYLE_ID_INLINE43 = 44,
-    STYLE_ID_BLOCK = 45
+    STYLE_ID_BLOCK = 45,
+    STYLE_ID_LINE_CHART = 46,
+    STYLE_ID_LINE_CHART_LEGEND = 47,
+    STYLE_ID_LINE_CHART_AXIS = 48
 };
 
 enum ThemesEnum {
@@ -413,7 +427,11 @@ enum ColorsEnum {
 	COLOR_ID_CUSTOM_B9F3F0 = 40,
 	COLOR_ID_CUSTOM_EEE30F = 41,
 	COLOR_ID_CUSTOM_FFFFFF = 42,
-	COLOR_ID_CUSTOM_C8C8C8 = 43
+	COLOR_ID_CUSTOM_C8C8C8 = 43,
+	COLOR_ID_CUSTOM_202020 = 44,
+	COLOR_ID_CUSTOM_9E0000 = 45,
+	COLOR_ID_CUSTOM_0000A3 = 46,
+	COLOR_ID_CUSTOM_00A800 = 47
 };
 
 enum PagesEnum {
@@ -425,10 +443,11 @@ enum PagesEnum {
     PAGE_ID_KEYBOARD = 5,
     PAGE_ID_ROLLER_INPUT_DEMO = 6,
     PAGE_ID_FRONT_PANEL = 7,
-    PAGE_ID_LOADER = 8
+    PAGE_ID_LOADER = 8,
+    PAGE_ID_LINE_CHART = 9
 };
 
-extern const uint8_t assets[83348];
+extern const uint8_t assets[93078];
 
 #endif
 
