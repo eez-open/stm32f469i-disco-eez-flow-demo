@@ -664,7 +664,10 @@
       "top": 0,
       "width": 800,
       "height": 480,
-      "scaleToFit": false
+      "scaleToFit": false,
+      "lvglLocalStyles": {
+        "objID": "1b4d3944-2a33-2556-6e3f-c1c1bb594fb7"
+      }
     },
     {
       "objID": "119c7daf-3076-c8d1-15cd-82e64f19316a",
@@ -2415,7 +2418,10 @@
       "top": 0,
       "width": 800,
       "height": 480,
-      "scaleToFit": false
+      "scaleToFit": false,
+      "lvglLocalStyles": {
+        "objID": "0761e1bd-a738-92e0-8b8e-2cc5785a5c71"
+      }
     },
     {
       "objID": "16f196d3-9857-2f36-31fc-34c7c105a683",
@@ -2909,7 +2915,10 @@
       "left": 0,
       "top": 0,
       "width": 800,
-      "height": 480
+      "height": 480,
+      "lvglLocalStyles": {
+        "objID": "3c6a6374-2b80-b62d-ace7-9ba21aee0ede"
+      }
     },
     {
       "objID": "95226fb4-690b-140a-f393-7e5d01950ad7",
@@ -3182,7 +3191,10 @@
       "top": 0,
       "width": 800,
       "height": 480,
-      "scaleToFit": false
+      "scaleToFit": false,
+      "lvglLocalStyles": {
+        "objID": "04556c07-bd90-161c-2116-86b69fff4840"
+      }
     },
     {
       "objID": "97fc3aad-3a62-ec9b-e3d8-c4e7bf1d0392",
@@ -5146,7 +5158,10 @@
       "top": 0,
       "width": 800,
       "height": 480,
-      "scaleToFit": false
+      "scaleToFit": false,
+      "lvglLocalStyles": {
+        "objID": "421d2169-2a2a-60c6-54be-294028633154"
+      }
     },
     {
       "objID": "557f7286-115d-2760-9b33-3a2d571ca915",
@@ -5529,7 +5544,10 @@
       "top": 0,
       "width": 800,
       "height": 480,
-      "scaleToFit": false
+      "scaleToFit": false,
+      "lvglLocalStyles": {
+        "objID": "9ac0b100-28db-d2f1-526f-ffbdfd2013a3"
+      }
     },
     {
       "objID": "6d840b90-20d8-2a4b-d9d2-acb0cc8a40ba",
@@ -5580,7 +5598,10 @@
       "left": 0,
       "top": 0,
       "width": 1000,
-      "height": 680
+      "height": 680,
+      "lvglLocalStyles": {
+        "objID": "6dac3402-01c7-26e7-6561-2acf05a5eec8"
+      }
     },
     {
       "objID": "89a59423-6fc6-bffe-01b1-8a123092e229",
@@ -6032,7 +6053,10 @@
       "top": 0,
       "width": 30,
       "height": 20,
-      "isUsedAsCustomWidget": true
+      "isUsedAsCustomWidget": true,
+      "lvglLocalStyles": {
+        "objID": "2c65f954-4a2c-1065-a890-16c6a1dc99fd"
+      }
     },
     {
       "objID": "b641b8ce-313d-4da9-c39b-09a38e7026cd",
@@ -6089,18 +6113,21 @@
               "objID": "0bab4202-65b5-4b1e-af97-cf794ed17547",
               "label": "\"Min\"",
               "color": "#9e0000",
+              "width": 1.5,
               "value": "value.min"
             },
             {
               "objID": "280d085e-59c6-4353-acc5-55a6f58466ab",
               "label": "\"Max\"",
               "color": "#0000a3",
+              "width": 1.5,
               "value": "value.max"
             },
             {
               "objID": "9c0b15a0-2656-4e06-b172-fec9ff698049",
               "label": "\"Avg\"",
               "color": "#00a800",
+              "width": 1.5,
               "value": "value.avg"
             }
           ],
@@ -6116,6 +6143,10 @@
             "right": 90,
             "bottom": 50,
             "left": 50
+          },
+          "titleStyle": {
+            "objID": "26a49bb3-b9d8-906e-bde8-d0ef18ad3076",
+            "inheritFrom": "line_chart"
           },
           "legendStyle": {
             "objID": "7a93edb4-28a0-8808-06f8-18f31f7ed04e",
@@ -6513,7 +6544,10 @@
       "left": 0,
       "top": 0,
       "width": 800,
-      "height": 480
+      "height": 480,
+      "lvglLocalStyles": {
+        "objID": "1058fc5f-2436-3fc7-39d1-d7262046d1c4"
+      }
     }
   ],
   "styles": [
