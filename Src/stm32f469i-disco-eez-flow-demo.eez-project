@@ -35,7 +35,8 @@
           "template": "#include \"document.h\"\n\nnamespace eez {\nnamespace gui {\n\n#if defined(EEZ_PLATFORM_STM32)\n\n//${eez-studio DATA_ARRAY_DEF stm32}\n\n//${eez-studio ACTIONS_ARRAY_DEF stm32}\n\n//${eez-studio GUI_ASSETS_DEF_COMPRESSED stm32}\n\n#elif defined(EEZ_PLATFORM_SIMULATOR)\n\n//${eez-studio DATA_ARRAY_DEF simulator}\n\n//${eez-studio ACTIONS_ARRAY_DEF simulator}\n\n//${eez-studio GUI_ASSETS_DEF_COMPRESSED simulator}\n\n#endif\n\n} // namespace gui\n} // namespace eez\n"
         }
       ],
-      "destinationFolder": "."
+      "destinationFolder": ".",
+      "lvglInclude": "lvgl/lvgl.h"
     }
   },
   "variables": {
@@ -466,7 +467,7 @@
         },
         {
           "objID": "7f852df5-ddd4-47eb-a89b-8892f0d3e186",
-          "type": "LayoutViewWidget",
+          "type": "UserWidgetWidget",
           "left": 90,
           "top": 272,
           "width": 84,
@@ -478,7 +479,7 @@
             "inheritFrom": "default"
           },
           "timeline": [],
-          "layout": "loader"
+          "userWidgetPageName": "loader"
         },
         {
           "objID": "7186d515-d01f-438d-edec-ea83a4766a95",
@@ -730,6 +731,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -770,6 +775,10 @@
               "height": {
                 "enabled": true,
                 "value": 318,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -814,6 +823,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -856,6 +869,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -896,6 +913,10 @@
               "height": {
                 "enabled": true,
                 "value": 318,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -977,6 +998,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -1017,6 +1042,10 @@
               "height": {
                 "enabled": true,
                 "value": 318,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -1061,6 +1090,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -1103,6 +1136,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -1143,6 +1180,10 @@
               "height": {
                 "enabled": true,
                 "value": 318,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -1223,6 +1264,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -1263,6 +1308,10 @@
               "height": {
                 "enabled": true,
                 "value": 318,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -1307,6 +1356,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -1349,6 +1402,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -1389,6 +1446,10 @@
               "height": {
                 "enabled": true,
                 "value": 318,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -1469,6 +1530,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -1509,6 +1574,10 @@
               "height": {
                 "enabled": true,
                 "value": 318,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -1553,6 +1622,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -1595,6 +1668,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -1635,6 +1712,10 @@
               "height": {
                 "enabled": true,
                 "value": 318,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -1716,6 +1797,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -1756,6 +1841,10 @@
               "height": {
                 "enabled": true,
                 "value": 318,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -1800,6 +1889,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -1842,6 +1935,10 @@
                 "value": 318,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -1882,6 +1979,10 @@
               "height": {
                 "enabled": true,
                 "value": 318,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -1943,6 +2044,10 @@
                 "value": 7,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -1982,6 +2087,10 @@
               "height": {
                 "enabled": true,
                 "value": 7,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -2025,6 +2134,10 @@
                 "value": 7,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -2066,6 +2179,10 @@
                 "value": 7,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -2105,6 +2222,10 @@
               "height": {
                 "enabled": true,
                 "value": 7,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -2205,7 +2326,7 @@
         },
         {
           "objID": "f88273ea-a4a6-4162-f828-280e9b82c4f9",
-          "type": "LayoutViewWidget",
+          "type": "UserWidgetWidget",
           "left": 5,
           "top": 438,
           "width": 40,
@@ -2217,7 +2338,7 @@
             "inheritFrom": "default"
           },
           "timeline": [],
-          "layout": "loader"
+          "userWidgetPageName": "loader"
         },
         {
           "objID": "a8ed332c-5da2-4a5a-c089-460053d7b347",
@@ -2256,6 +2377,10 @@
               "height": {
                 "enabled": true,
                 "value": 35,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -2297,6 +2422,10 @@
               "height": {
                 "enabled": true,
                 "value": 35,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -5642,6 +5771,10 @@
                 "value": 0,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -5681,6 +5814,10 @@
                 "value": 20,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -5718,6 +5855,10 @@
               "height": {
                 "enabled": true,
                 "value": 0,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -5775,6 +5916,10 @@
                 "value": 0,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -5814,6 +5959,10 @@
                 "value": 20,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -5851,6 +6000,10 @@
               "height": {
                 "enabled": true,
                 "value": 0,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -5908,6 +6061,10 @@
                 "value": 0,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -5949,6 +6106,10 @@
                 "value": 20,
                 "easingFunction": "linear"
               },
+              "scale": {
+                "enabled": false,
+                "easingFunction": "linear"
+              },
               "scaleX": {
                 "enabled": false,
                 "easingFunction": "linear"
@@ -5986,6 +6147,10 @@
               "height": {
                 "enabled": true,
                 "value": 0,
+                "easingFunction": "linear"
+              },
+              "scale": {
+                "enabled": false,
                 "easingFunction": "linear"
               },
               "scaleX": {
@@ -6053,7 +6218,7 @@
       "top": 0,
       "width": 30,
       "height": 20,
-      "isUsedAsCustomWidget": true,
+      "isUsedAsUserWidget": true,
       "lvglLocalStyles": {
         "objID": "2c65f954-4a2c-1065-a890-16c6a1dc99fd"
       }
@@ -6132,7 +6297,11 @@
             }
           ],
           "title": "\"Line Chart Demo\"",
+          "showTitle": "true",
           "showLegend": "show_legend",
+          "showXAxis": "true",
+          "showYAxis": "true",
+          "showGrid": "true",
           "yAxisRangeOption": "floating",
           "yAxisRangeFrom": "-50",
           "yAxisRangeTo": "150",
@@ -6144,6 +6313,7 @@
             "bottom": 50,
             "left": 50
           },
+          "marker": "null",
           "titleStyle": {
             "objID": "26a49bb3-b9d8-906e-bde8-d0ef18ad3076",
             "inheritFrom": "line_chart"
@@ -6159,6 +6329,10 @@
           "yAxisStyle": {
             "objID": "b5a1cf28-0545-3b67-dabd-08b2827d274c",
             "inheritFrom": "line_chart_axis"
+          },
+          "markerStyle": {
+            "objID": "d4733d8e-c8b8-4c90-9509-7aaaa83bc253",
+            "inheritFrom": "default"
           }
         },
         {

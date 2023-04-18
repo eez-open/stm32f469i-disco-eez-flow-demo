@@ -200,7 +200,7 @@ enum PagesEnum {
     PAGE_ID_LINE_CHART = 8
 };
 
-extern const uint8_t assets[73829];
+extern const uint8_t assets[73830];
 
 #elif defined(EEZ_PLATFORM_SIMULATOR)
 
@@ -400,7 +400,7 @@ enum PagesEnum {
     PAGE_ID_LINE_CHART = 9
 };
 
-extern const uint8_t assets[90256];
+extern const uint8_t assets[90257];
 
 #endif
 
