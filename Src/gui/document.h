@@ -129,7 +129,8 @@ enum StylesEnum {
     STYLE_ID_BACKGROUND = 21,
     STYLE_ID_BUTTON = 22,
     STYLE_ID_BUTTON_DISABLED = 23,
-    STYLE_ID_NOTE_M = 24
+    STYLE_ID_NOTE_M = 24,
+    STYLE_ID_SWITCH = 25
 };
 
 enum ThemesEnum {
@@ -199,7 +200,7 @@ enum PagesEnum {
     PAGE_ID_LOADER = 8
 };
 
-extern const uint8_t assets[73323];
+extern const uint8_t assets[73340];
 
 #elif defined(EEZ_PLATFORM_SIMULATOR)
 
@@ -327,7 +328,8 @@ enum StylesEnum {
     STYLE_ID_BACKGROUND = 21,
     STYLE_ID_BUTTON = 22,
     STYLE_ID_BUTTON_DISABLED = 23,
-    STYLE_ID_NOTE_M = 24
+    STYLE_ID_NOTE_M = 24,
+    STYLE_ID_SWITCH = 25
 };
 
 enum ThemesEnum {
@@ -398,7 +400,7 @@ enum PagesEnum {
     PAGE_ID_LOADER = 9
 };
 
-extern const uint8_t assets[89771];
+extern const uint8_t assets[89777];
 
 #endif
 

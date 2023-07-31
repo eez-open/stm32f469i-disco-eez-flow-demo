@@ -2684,8 +2684,8 @@
           "type": "ShowPageActionComponent",
           "left": 852,
           "top": 480,
-          "width": 92,
-          "height": 55,
+          "width": 95,
+          "height": 54,
           "customInputs": [],
           "customOutputs": [],
           "page": "main"
@@ -2695,8 +2695,8 @@
           "type": "ShowPageActionComponent",
           "left": 486,
           "top": 505,
-          "width": 121,
-          "height": 55,
+          "width": 120,
+          "height": 54,
           "customInputs": [],
           "customOutputs": [],
           "page": "roller_input_demo"
@@ -8610,7 +8610,7 @@
           "left": 5,
           "top": -115,
           "width": 188,
-          "height": 55,
+          "height": 54,
           "customInputs": [],
           "customOutputs": [],
           "from": "0",
@@ -8623,7 +8623,7 @@
           "left": -126,
           "top": -115,
           "width": 87,
-          "height": 25,
+          "height": 24,
           "customInputs": [],
           "customOutputs": []
         }
@@ -9006,6 +9006,20 @@
           "color": "#202020",
           "backgroundColor": "#ffffff",
           "borderColor": "#808080"
+        },
+        {
+          "objID": "83a69a6b-dac5-43e4-a0e0-173f418315fa",
+          "id": 25,
+          "name": "switch",
+          "childStyles": [],
+          "color": "switch_widget_color",
+          "backgroundColor": "switch_widget_background_off",
+          "activeColor": "switch_widget_color",
+          "activeBackgroundColor": "switch_widget_background_on",
+          "focusColor": "switch_widget_color",
+          "borderSize": "2",
+          "borderColor": "switch_widget_border",
+          "padding": "3 0"
         }
       ],
       "font": "text_M",
